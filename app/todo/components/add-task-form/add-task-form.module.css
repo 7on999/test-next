@@ -6,6 +6,7 @@
   padding: 16px;
   align-items: center;
   height: fit-content;
+  min-width: 360px;
 }
 
 .title {
@@ -44,4 +45,9 @@
   background-color: #181818;
   color: #24B47E;
   border-color: #24B47E;
+}
+
+.btnFilter {
+  font-size: 14px;
+  padding: 12px 12px;
 }
