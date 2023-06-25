@@ -1,7 +1,7 @@
 import styles from './main.module.css'
 import dynamic from 'next/dynamic'
 
-import { TaskProvider } from './todo-context'
+import  TaskProvider from './todo-context'
 
 const TodoList = dynamic(() => import( './components/todo-list/todo-list.component'), {
   ssr: false

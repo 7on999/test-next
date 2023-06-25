@@ -1,4 +1,5 @@
 'use client'
+import dynamic from "next/dynamic";
 
 import React, { createContext, useEffect, useReducer, useState } from "react";
 import taskReducer from './store/task-reducer'
@@ -15,7 +16,6 @@ export type TypeContext = {
   filter: FilterSearchTypeValues
   setFilter: (value:FilterSearchTypeValues)=>void
 }
-
 export const TasksContext = createContext<TypeContext|null>(null);
 
 export const TaskProvider = ({ children }: Props) => {
@@ -24,14 +24,11 @@ export const TaskProvider = ({ children }: Props) => {
   const [tasks, dispatchTasks]= useReducer ( taskReducer, 
     [],
     () => {
-    try {
-      const tasksLocalStorage = window.localStorage.getItem("tasks")
+    const tasksLocalStorage = window.localStorage.getItem("tasks")
       if (typeof(tasksLocalStorage)==='string') {
         return JSON.parse(tasksLocalStorage)||[]
       }
-    } catch(_e) {
-        return []
-      }
+      return []
     }
   )
 
@@ -52,3 +49,7 @@ export const TaskProvider = ({ children }: Props) => {
     </TasksContext.Provider>
   );
 };
+
+export default dynamic(() => Promise.resolve(TaskProvider), {
+  ssr: false,
+});
