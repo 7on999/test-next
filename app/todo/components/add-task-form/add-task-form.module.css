@@ -39,6 +39,13 @@
 .btnFilterWrapper {
   display: flex;
   gap:5px;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 450px) {
+  .btnFilterWrapper {
+    flex-direction: row;
+  }
 }
 
 .activeFilterBtn {
