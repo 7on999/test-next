@@ -50,9 +50,9 @@ export function AddTaskForm(){
       <textarea placeholder='Введите описание задачи' className={styles.description} value={description} onChange={onDescriptionChange}/>
       <button className={styles.btn} onClick={onBtnClick}> Добавить задачу </button> 
       <div  className={styles.btnFilterWrapper}>
-        <button className={filter===FiltersSeach.ALL? `${styles.activeFilterBtn} ${styles.btnFilter}` : styles.bbtnFiltertn} onClick={setFilterAll}> Все задачи </button>
+        <button className={filter===FiltersSeach.ALL? `${styles.activeFilterBtn} ${styles.btnFilter}` : styles.btnFilter} onClick={setFilterAll}> Все задачи </button>
         <button className={filter===FiltersSeach.NOT_COMPLTETED? `${styles.activeFilterBtn} ${styles.btnFilter}` : styles.btnFilter} onClick={setFilterActive} > Активные </button>
-        <button className={filter===FiltersSeach.COMPLTETED? `${styles.activeFilterBtn} ${styles.btnFilter}` : styles.btnFilter}onClick={setFilterCompleted} > Выполненые </button>
+        <button className={filter===FiltersSeach.COMPLTETED? `${styles.activeFilterBtn} ${styles.btnFilter}` : styles.btnFilter} onClick={setFilterCompleted} > Выполненые </button>
       </div>
     </div>
   )

@@ -48,13 +48,16 @@
   }
 }
 
+.btnFilter {
+  font-size: 14px;
+  padding: 12px 12px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: whitesmoke
+}
+
 .activeFilterBtn {
   background-color: #181818;
   color: #24B47E;
   border-color: #24B47E;
-}
-
-.btnFilter {
-  font-size: 14px;
-  padding: 12px 12px;
 }
