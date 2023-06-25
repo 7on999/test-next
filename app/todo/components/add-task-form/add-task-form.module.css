@@ -1,0 +1,47 @@
+.wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap:16px;
+  border: 1px solid blue;
+  padding: 16px;
+  align-items: center;
+  height: fit-content;
+}
+
+.title {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.description {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  width:fit-content;
+  padding: 18px 32px;
+  border-radius: 16px;
+  background-color: #3272d9;;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  color:#fcfcfc;
+  transition: all .15s;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.btnFilterWrapper {
+  display: flex;
+  gap:5px;
+}
+
+.activeFilterBtn {
+  background-color: #181818;
+  color: #24B47E;
+  border-color: #24B47E;
+}
