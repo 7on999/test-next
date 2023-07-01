@@ -1,8 +1,8 @@
 <a href='https://test-next-pink.vercel.app/' target="_blank" rel="noopener noreferrer nofollow"> click here to see this app </a>
 
-<img src='./public/text-task.png'/>
-
 Выполнил все пункты по ТЗ
+
+<img src='./public/text-task.png'/>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
